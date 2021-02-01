@@ -27,6 +27,7 @@ This is a list of providers that are bundled within the image. Feel free to crea
 | NordVPN                 | `NORDVPN`                         |
 | OctaneVPN               | `OCTANEVPN`                       |
 | OVPN                    | `OVPN`                            |
+| Perfect Privacy         | `PERFECTPRIVACY`                  |
 | Private Internet Access | `PIA`                             |
 | Privado                 | `PRIVADO`                         |
 | PrivateVPN              | `PRIVATEVPN`                      |
