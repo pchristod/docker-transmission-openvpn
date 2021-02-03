@@ -70,6 +70,7 @@ HEALTHCHECK --interval=1m CMD /etc/scripts/healthcheck.sh
 
 # Add labels to identify this image and version
 ARG REVISION
+RUN echo "REVISION: $REVISION"
 # Set env from build argument or default to empty string
 ENV REVISION=${REVISION:-""}
 LABEL org.opencontainers.image.source=https://github.com/pchristod/docker-transmission-openvpn
