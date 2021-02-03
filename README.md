@@ -6,7 +6,15 @@
 
 This container contains OpenVPN and Transmission with a configuration
 where Transmission is running only when OpenVPN has an active tunnel.
-It has built in support for many popular VPN providers to make the setup easier.
+It has built in support for many popular VPN providers to make the setup easier. 
+
+This is a fork of the official work done at https://github.com/haugene/docker-transmission-openvpn. 
+All credits belong to the original maintainers.
+A few changes have been made to the official work:
+
+* Add back updated Perfect Privacy configuration files to provide native support for this Provider again. This was removed from the official version.
+* Added `dnsleaktest.sh` script to the image. This will enable you to check for DNS Leaks by running the script. It can be found inside the container during runtime in `/etc/scripts`.
+* Added `bind-tools` to the image. This will enable you to natively use `dig` to retrieve information from DNS Servers.
 
 ## Before you continue
 
