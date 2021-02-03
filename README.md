@@ -25,7 +25,7 @@ with it. PR's are always welcome! :)
 
 ## Quick Start
 
-These examples shows valid setups using PIA as provider for both
+These examples show valid setups using PIA as provider for both
 docker run and docker-compose. Note that you should read some documentation
 at some point, but this is a good place to start.
 
