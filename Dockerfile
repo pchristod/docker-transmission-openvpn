@@ -3,8 +3,8 @@ FROM alpine:3.13
 VOLUME /data
 VOLUME /config
 
-RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
-    && apk --no-cache add bash bind-tools dumb-init ip6tables ufw@community openvpn shadow transmission-daemon transmission-cli \
+RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/v3.13/community" >> /etc/apk/repositories \
+    && apk --no-cache add bash dumb-init ip6tables ufw@community openvpn shadow transmission-daemon transmission-cli \
         curl jq tzdata openrc tinyproxy tinyproxy-openrc openssh unrar git \
     && mkdir -p /opt/transmission-ui \
     && echo "Install Flood for Transmission" \
